@@ -23,12 +23,15 @@ TARGET_DENSITY := xxhdpi
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_INCLUDE_ARCORE := true
 #$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
-$(call inherit-product, vendor/liquid/config/common_full_phone.mk)
+$(call inherit-product, vendor/discovery/config/common_full_phone.mk)
 
 ## Device identifier. This must come after all inclusions
-PRODUCT_NAME := liquid_mido
+PRODUCT_NAME := discovery_mido
 BOARD_VENDOR := Xiaomi
 PRODUCT_DEVICE := mido
+TARGET_VENDOR_PRODUCT_NAME := mido
+TARGET_VENDOR_DEVICE_NAME := mido
+DEVICE_MAINTAINER := SagarRokade
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
